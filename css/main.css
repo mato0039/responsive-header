@@ -114,6 +114,7 @@ nav a:hover {
   }
 
   nav ul {
+    align-items: center;
     justify-content: flex-end;
     padding: 0 .75rem;
   }
