@@ -52,7 +52,7 @@ nav a {
   display: block;
   padding: .5em .75em;
   text-decoration: none;
-  white-space: normal;
+  white-space: nowrap;
 }
 
 nav a:hover {
