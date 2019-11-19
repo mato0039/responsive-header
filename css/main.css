@@ -9,8 +9,13 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  box-sizing: border-box;
+  font: normal 100%/1.3 sans-serif;
   font-family: "Ubuntu", sans-serif;
-  line-height: 1.3;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
 body {
@@ -26,21 +31,22 @@ h1 {
   display: block;
   font-size: 2rem;
   margin: 0;
-  padding: 5px 0;
+  margin-bottom: .9rem;
+  padding-top: 5px;
   text-align: center;
   width: 100%;
 }
 
-ul {
+nav ul {
   margin: 0;
   padding: 0;
 }
 
-li {
+nav li {
   list-style-type: none;
 }
 
-a {
+nav a {
   color: #6c8fe0;
   display: block;
   font-size: 1.125rem;
@@ -48,23 +54,42 @@ a {
   text-decoration: none;
 }
 
+nav a:hover {
+  background-color: #6c8fe0;
+  color: #fff;
+}
+
 @media only and screen (min-width: 25em) {
 
-  ul {
-    display: flex;
-    width: 50%;
+  nav li {
+    display: inline-block;
+    text-align: center;
   }
 
 }
 
 @media only and screen (min-width: 38em) {
 
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
 }
 
 @media only and screen (min-width: 60em) {
 
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
 }
 
 @media only and screen (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
 
 }
